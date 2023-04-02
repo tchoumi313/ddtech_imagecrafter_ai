@@ -45,10 +45,12 @@ const CreatePost = () => {
   const [form, setForm] = useState({ name: "", prompt: "", photo: "" });
 
   const [generatingImg, setGeneratingImg] = useState(false);
+
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
@@ -172,7 +174,7 @@ const CreatePost = () => {
             type="submit"
             className="mt-3 text-white bg-blue-700 text-sm w-full sm:w-auto rounded-md text-center px-5 py-2.5 "
           >
-            Share with the community
+            {loading ? "Sharing..." : "Share with the community"}
           </button>
         </div>
       </form>
