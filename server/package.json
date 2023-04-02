@@ -9,6 +9,9 @@
     "start": "node index.js",
     "server": "nodemon index.js"
   },
+  "engines": {
+    "node": ">=15 <19"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
