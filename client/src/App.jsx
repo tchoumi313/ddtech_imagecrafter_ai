@@ -20,7 +20,7 @@ const App = () => {
               className="w-28 object-contain rounded-md "
             />
           </Link>
-          <span className="text-center justify-center items-center mt-12 sm:mt-1">
+          <span className="text-center justify-center items-center mt-10">
             <a
               className="text-stone-800 text-sm hover:bg-white hover:text-blue-700 rounded-md"
               href="https://donaldtportfolio.netlify.app"
