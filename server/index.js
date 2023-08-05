@@ -4,6 +4,12 @@ import cors from 'cors';
 import connectDB from './mongoDB/connect.js';
 import postRoutes from './routes/postRoutes.js'
 import dalleRoutes from './routes/dalleRoutes.js'
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import passport from 'passport';
+import { Strategy as LocalStrategy } from 'passport-local';
+
+import jwt from 'jsonwebtoken';
 
 dotenv.config()
 
@@ -34,12 +40,13 @@ startServer()
 
 //new 
 
-const bodyParser = require('body-parser');
+/*const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const passport = require('passport');
 const LocalStrategy= require('passport-local');
 
 const jwt = require('jsonwebtoken');
+*/
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(passport.initialize());
