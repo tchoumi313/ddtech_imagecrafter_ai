@@ -83,7 +83,7 @@ const messageSchema = mongoose.Schema({
 
 const Message = mongoose.model('Message', messageSchema);
 
-module.exports = Message;
+//module.exports = Message;
 
 const userSchema = new mongoose.Schema({
     name:{
@@ -126,7 +126,7 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.model('User',userSchema);
 
-module.exports = User;
+//module.exports = User;
 
 
 
@@ -447,3 +447,4 @@ app.post("/friend-request/accept", async (req, res) => {
       res.status(500).json({message:"internal server error"})
     }
   })
+
