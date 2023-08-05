@@ -32,7 +32,7 @@ const startServer = async () => {
     {
         useNewUrlParser:true,
         useUnifiedTopology:true
-    }
+    });
         app.listen(8080, () => console.log('Server started on port http://localhost:8080'))
     } catch (error) {
         console.log(error)
