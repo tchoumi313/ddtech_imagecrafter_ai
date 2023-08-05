@@ -8,7 +8,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
-
+import multer from 'multer';
 import jwt from 'jsonwebtoken';
 
 dotenv.config()
@@ -323,7 +323,7 @@ app.post("/friend-request/accept", async (req, res) => {
     }
   });
   
-  const multer = require("multer");
+  //const multer = require("multer");
   
   // Configure multer for handling file uploads
   const storage = multer.diskStorage({
